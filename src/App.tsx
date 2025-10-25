@@ -1,8 +1,8 @@
-;
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <Routes>
@@ -10,6 +10,6 @@ function App() {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
