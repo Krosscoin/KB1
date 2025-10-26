@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%; /* Darker shade of blue/purple */
+    --primary-foreground: 210 40% 98%;
+    --primary-light: 220 60% 30%; /* A lighter variant for subtle effects */
+    --primary-glow: 220 60% 40%; /* Slightly lighter for a glowing effect */
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 91% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+
+    /* Krossable specific colors */
+    --krossable: 257 68% 54%; /* A vibrant purple for Krossable branding */
+    --krossable-foreground: 0 0% 100%; /* White text for contrast */
+    --krossable-light: 265 78% 68%; /* Lighter shade of Krossable purple */
+    --krossable-soft: 270 40% 85%; /* Softer, muted Krossable purple */
+  }
+
+  .dark {
+    --background: 222.2 47.4% 11.2%;
+    --foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --popover: 222.2 47.4% 11.2%;
+    --popover-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --card: 222.2 47.4% 11.2%;
+    --card-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-light: 220 30% 15%;
+    --primary-glow: 220 40% 20%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63.9% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 217.2 32.6% 17.5%;
+
+    /* Krossable specific colors for dark mode */
+    --krossable: 257 68% 54%; /* Maintain vibrant purple */
+    --krossable-foreground: 0 0% 100%; /* White text */
+    --krossable-light: 265 78% 68%;
+    --krossable-soft: 270 40% 85%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
